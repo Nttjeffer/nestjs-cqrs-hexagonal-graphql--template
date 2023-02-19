@@ -18,9 +18,7 @@
 		"noFallthroughCasesInSwitch": false,
 		"esModuleInterop": true,
 		"paths": {
-			"@Operations/*": ["src/operations/*"],
-			"@Shared/*": ["src/shared/*"],
-			"@cqrs": ["src/cqrs/"]
+			"@Shared/*": ["src/shared/*"]
 		}
 	}
 }
