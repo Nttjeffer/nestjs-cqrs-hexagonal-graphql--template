@@ -1,10 +1,8 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { AppConfigModule } from '@Shared/infrastructure/config/app-config.module';
+import { GraphqlAdapterModule } from '@Shared/infrastructure/graphql/graphql-adapter.module';
 
 @Module({
-  imports: [],
-  controllers: [AppController],
-  providers: [AppService],
+	imports: [GraphqlAdapterModule, AppConfigModule],
 })
 export class AppModule {}

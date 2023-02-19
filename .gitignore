@@ -33,3 +33,9 @@ lerna-debug.log*
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+# PACKAGE LOCK VERSIONS
+package-lock.json
+
+# DPX CORE SHARED FILES
+*dpx-shared*.tgz
