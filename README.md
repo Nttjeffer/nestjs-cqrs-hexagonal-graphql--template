@@ -57,42 +57,4 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
-
-## Sync template with project:
-
-These commands must be executed in project folder, not in template
-
-```bash
-# Add template repo as remote
-$ git remote add template https://github.com/Iberia-Ent/operations--dpx--templates--service.git
-
-# Fetch changes from template
-$ git fetch template
-
-# Create a new branch to receive changes from template
-$ git branch from_template
-
-# Change to the new branch
-$ git checkout from_template
-
-# Merge template's changes
-$ git merge template/master --allow-unrelated-histories
-
-# Resolve all merge conflicts
-
-# Merge changes with master
-$ git checkout master
-$ git merge from_template
-
-# Commit all changes
-$ git commit -m "Merging with template"
-
-# Remove from_template branch
-$ git branch -D from_template
-
-# Remove template remote repo
-$ git remote remove template
-
-# Push changes to origin
-$ git push origin master
-```
+ 
